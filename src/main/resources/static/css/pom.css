@@ -1,0 +1,132 @@
+/* === Google Font ===*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === Variables Define ===*/
+:root{
+    --primary-color: #da9f9f;
+    --white-color: #ffffff;
+    --black-color: #111111; /* Adjusted text color */
+    --light-gray: #E4E8EE;
+    --background-color: #f0f0f0;
+}
+
+/* === Body CSS ===*/
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* === Main Content CSS ===*/
+.wrapper {
+    padding: 50px 25px 0;
+    max-width: 668px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--white-color);
+    color: var(--black-color); /* Adjusted text color */
+}
+.wrapper .headline {
+    text-align: center;
+    padding-bottom: 48px;
+}
+.wrapper .headline h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+}
+.wrapper .form {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+.wrapper .form-group {
+    margin-bottom: 15px;
+}
+.wrapper .form-group input {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 5px;
+    color: var(--black-color);
+    border: 1px solid #e4e8ee;
+
+    box-shadow: none;
+    width: 100%;
+}
+.wrapper .form-group input:focus {
+    outline: none;
+}
+.wrapper .form-group input::placeholder {
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+.wrapper .btn {
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 29px;
+    height: 48px;
+    text-transform: uppercase;
+    color: var(--black-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.wrapper .btn:focus {
+    outline: none;
+}
+.wrapper .account-exist {
+    color: var(--black-color);
+    border-top: 1px solid var(--light-gray);
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.wrapper .account-exist a {
+    color: var(--primary-color);
+}
+.wrapper .forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.wrapper .forget-password a {
+    color: var(--primary-color);
+}
+.wrapper .forget-password .check-box {
+    font-size: 15px;
+    color: var(--black-color);
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 50px 25px 0;
+        max-width: 668px;
+        width: 100%;
+        margin: auto;
+        background-color: #ff8c00;
+    }
+    .wrapper .headline h1 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
